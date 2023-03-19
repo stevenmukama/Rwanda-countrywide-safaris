@@ -16,7 +16,4 @@ After cloning the files, you will have to run ```yarn``` followed by ```yarn sta
 
 ### 3. Add your own data
 Change the data in the ```data.json``` file as well as add any images to ```public/img/```
-You can also change styles by modifying the ```public/css``` files.
-
-
-##### Mukama Steven
+You can also change styles by modifying the ```public/css``` files
