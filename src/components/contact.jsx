@@ -7,6 +7,8 @@ const initialState = {
   email: "",
   message: "",
 };
+
+
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
 
@@ -14,23 +16,25 @@ export const Contact = (props) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
-  const clearState = () => setState({ ...initialState });
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm("service_lvua824", "template_cz4il6y", e.target, "j1O789tDbioCGBin9")
       .then(
         (result) => {
           console.log(result.text);
-          clearState();
+          // setState({initialState});
+          window.location.reload();
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   };
+
   return (
     <div>
       <div id="contact">
@@ -44,7 +48,7 @@ export const Contact = (props) => {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form name="sentMessage"  onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -149,10 +153,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
+            &copy; 2023 Steven Mukama.
           </p>
         </div>
       </div>
