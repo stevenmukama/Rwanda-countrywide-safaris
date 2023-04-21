@@ -12,6 +12,7 @@ You will need to have <a href="https://nodejs.org/">Node JS</a> installed on you
 After cloning the files, you will have to run ```yarn``` followed by ```yarn start``` in the CLI
 
 ``  npm install``
+
 ``npm  start``
 
 ### 3. Add your own data

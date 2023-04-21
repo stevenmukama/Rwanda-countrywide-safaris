@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const Navigation = (props) => {
+  const [clickedItem,setClickedItem] = useState(null);
+
+  const handleItemClick = (item) => {
+    setClickedItem(item);
+  };
+
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -11,15 +17,13 @@ export const Navigation = (props) => {
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-          Rwanda country safaris
-          </a>{" "}
+            Rwanda country safaris
+          </a>
         </div>
 
         <div
@@ -28,37 +32,57 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
-                Features
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="page-scroll">
+              <a
+                href="#about"
+                className="page-scroll"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.in"
+                onClick={() => handleItemClick("About")}
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <a
+                href="#services"
+                className="page-scroll"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.in"
+                onClick={() => handleItemClick("Services")}
+              >
                 Services
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll">
+              <a
+                href="#portfolio"
+                className="page-scroll"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.in"
+                onClick={() => handleItemClick("Gallery")}
+              >
                 Gallery
               </a>
             </li>
             <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a href="#team" className="page-scroll">
+              <a
+                href="#team"
+                className="page-scroll"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.in"
+                onClick={() => handleItemClick("Team")}
+              >
                 Team
               </a>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
+              <a
+                href="#contact"
+                className="page-scroll"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.in"
+                onClick={() => handleItemClick("Contact")}
+              >
                 Contact
               </a>
             </li>
