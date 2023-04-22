@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export const Navigation = (props) => {
-  const [clickedItem,setClickedItem] = useState(null);
+  const [setClickedItem] = useState(null);
 
   const handleItemClick = (item) => {
     setClickedItem(item);
