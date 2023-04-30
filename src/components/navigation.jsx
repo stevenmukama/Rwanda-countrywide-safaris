@@ -66,13 +66,13 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a
-                href="#team"
+                href="#ceo"
                 className="page-scroll"
                 data-toggle="collapse"
                 data-target=".navbar-collapse.in"
-                onClick={() => handleItemClick("Team")}
+                onClick={() => handleItemClick("ceo")}
               >
-                Team
+                Ceo
               </a>
             </li>
             <li>

@@ -439,21 +439,30 @@ header .intro-text {
   font-weight: 600;
   color: #666;
 }
-/* Team Section */
-#team {
+/* ceo Section */
+.ceostyles {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.ceoimagestyles {
+  width: 100%;
+}
+
+#ceo {
   padding: 100px 0;
 }
-#team h4 {
+#ceo h4 {
   margin: 5px 0;
 }
-#team .team-img {
+#ceo .ceo-img {
   width: 240px;
 }
-#team .thumbnail {
+#ceo .thumbnail {
   background: transparent;
   border: 0;
 }
-#team .thumbnail .caption {
+#ceo .thumbnail .caption {
   padding: 10px 0 0;
   color: #888;
 }
