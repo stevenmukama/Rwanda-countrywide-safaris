@@ -13,7 +13,7 @@
   },
   "Gallery": [
     {
-      "title": "Nyungwe National Park",
+      "title": "Mountain gorilla",
       "largeImage": "img/gorrilla.png",
       "smallImage": "img/gorrilla.png"
     },
@@ -23,7 +23,7 @@
       "smallImage": "img/boat.png"
     },
     {
-      "title": "Akagera National Park",
+      "title": "Volcanoes National Park",
       "largeImage": "img/mountain.png",
       "smallImage": "img/mountain.png"
     },
