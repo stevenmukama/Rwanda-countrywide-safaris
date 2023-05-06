@@ -38,6 +38,7 @@
       "smallImage": "img/basketweaving.jpg"
     }
   ],
+
   "Services": [
     {
       "icon": "fa fa-car",
@@ -58,8 +59,13 @@
       "icon": "fa fa-hotel",
       "name": "Hotel Booking",
       "text": "Find the best hotels at the best rates for your stay."
+    },
+    {
+      "icon": "fa fa-binoculars",
+      "name": "Birdwatching",
+      "text": "Experience the beauty of nature and spot rare bird species with our expert guides."
     }
-  ],
+],
 
   "Ceo": [
     {
