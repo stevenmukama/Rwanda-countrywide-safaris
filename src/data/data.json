@@ -64,6 +64,11 @@
       "icon": "fa fa-binoculars",
       "name": "Birdwatching",
       "text": "Experience the beauty of nature and spot rare bird species with our expert guides."
+    },
+    {
+      "icon": "fa fa-paw",
+      "name": "Travel to East Africa",
+      "text": "Embark on an unforgettable adventure in East Africa, with guided tours to safaris, national parks, and cultural experiences."
     }
 ],
 
